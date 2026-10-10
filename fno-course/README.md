@@ -23,6 +23,9 @@ A self-paced, ~40-week course for an Indian retail trader who wants to **first l
 
 Time: ~8-12 hours/week. Do not rush; the market will still be there.
 
+### 0.1a Lesson notes
+Detailed self-study notes are being added stage by stage in [`lessons/`](lessons/). **Stage A is ready:** [lessons/stage-a/](lessons/stage-a/README.md).
+
 ### 0.2 Gates (do not skip)
 
 You may only move to the next stage when you pass the **gate** at the end of the current one. Gates are written as concrete, checkable deliverables, not "I feel ready".
@@ -108,13 +111,13 @@ Basis = Future price − Spot
 
 **Topics**
 1. **Cost stack:** brokerage (flat ₹20/order typical), exchange transaction charges, SEBI turnover fee, STT (on sell side for options premium and futures value; rates have changed repeatedly, so [VERIFY]), GST on brokerage + charges, stamp duty (buy side), DP charges (n/a for F&O unless delivery), **slippage** (the largest hidden cost)
-2. **Options-specific STT trap:** STT on exercised in-the-money options is charged on intrinsic value at a far higher effective rate. Never hold ITM long options through expiry unless you intend exercise.
+2. **Options-specific STT and expiry traps:** an in-the-money option left to expiry is exercised automatically, and STT is charged on the *settlement (intrinsic) value*, not on your small premium [VERIFY rate]. For stock options this also means **physical delivery**: you must deliver or take delivery of the shares, with large margin and STT consequences. Square off ITM positions before expiry unless you deliberately intend exercise/delivery.
 3. **Margins:** SPAN (risk-based), exposure margin, extreme loss margin (ELM), upfront collection of option premium for buyers, peak-margin reporting and penalties, no cross-margin benefit on certain expiry-day positions [VERIFY]
 4. **Tax in India (verify with a CA each year):**
    - F&O gains/losses = **non-speculative business income** (not capital gains), reported in **ITR-3**
    - Turnover calculation per ICAI guidance (absolute sum of profits + losses for futures; options turnover rules differ)
    - Tax audit (Section 44AB) triggers: turnover thresholds and the loss/low-profit presumptive-scheme interaction
-   - Business losses can be carried forward 8 years (only if ITR filed on time); set off against other business income, not against salary
+   - Non-speculative business losses can be set off in the same year against other income heads except salary (e.g., capital gains), and carried forward up to 8 years against business income only (only if ITR is filed by the due date)
    - Advance tax obligations; expenses allowed (internet, software, data, depreciation)
    - Slab-rate taxation: model your *post-tax* returns
 5. **Regulation:** SEBI's F&O measures (suitability, upfront premium, intraday position monitoring, lot-size and expiry changes), SEBI's retail algo framework (broker accountability, algo registration/tagging, static IP, rate limits [VERIFY current status and deadlines]), risk of unregistered "tips/advisory" services
